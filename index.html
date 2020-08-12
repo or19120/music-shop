@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="https://img.icons8.com/pastel-glyph/64/000000/music.png">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/music_class.js"></script>
+    <title>My Music Shop</title>
+</head>
+
+
+<body>
+    <!-- LightBox -->
+    <div class="dark container-fluid  center d-none" id="divHide">
+        <div id="boxContent" class="dark-box text-center">
+            <img src="http://image.tmdb.org/t/p/w500/pIjnoUnXdLpROFzIRPNziPzgBUp.jpg" class="w-50">
+            <h3>Rambo 9</h3>
+            <div>Views: 200000</div>
+            <!-- <audio controls src="https://cdns-preview-8.dzcdn.net/stream/c-8708a478849e903d5065f4c9caaf8641-13.mp3"
+                id="ia_aud"></audio><br> -->
+
+            <button onclick="onCloseDarkWindow()" class="btn btn-danger mb-3">Close</button>
+        </div>
+    </div>
+
+
+    <!-- Main image -->
+    <div class="strip container-fluid">
+        <div class="container center">
+            <audio id="start_music" autoplay controls src="onload.mp3"></audio>
+            <a href="index.html">
+                <h1 class="text-white display-4 m-3">Welcome to My
+                    Music Store!</h1>
+            </a>
+            <h4 class="text-white h-4">Here you will be able to search and listen to previews of your favorite
+                songs. Have
+                fun!
+            </h4>
+        </div>
+    </div>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-between align-items-center p-3">
+                <div class="search col-lg-6 d-flex m-2"> <input id="id_search" class="form-control mr-sm-2"
+                        type="search" placeholder="&#xF002; Search Name" aria-label="Search"
+                        style="font-family:Arial, FontAwesome">
+                    <button onclick="onSearchMusic()" class="btn btn-info mr-2">Search</button>
+                </div>
+
+
+                <div class="col-lg-2">
+                    <input oninput="searchInside()" id="inside_search" class="form-control mr-sm-2" type="search"
+                        placeholder="&#xF002; Search Title..." aria-label="Search"
+                        style="font-family:Arial, FontAwesome">
+                </div>
+                <div class="search col-lg-3 d-flex">
+                    <select class="form-control" name="" id="id_sort" onchange="sortMusic()">
+                        <option value="">Sort by...</option>
+                        <option value="title">Title</option>
+                        <option value="duration">Duration</option>
+                        <option value="rank">Rating</option>
+                    </select>
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row" id="id_row">
+                <!-- <div class="col-lg-6 border p-2">
+                    <img class="w-25 mr-2 float-left"
+                        src="https://cdns-images.dzcdn.net/images/artist/1cd9c41f13f3114367692383758be3c1/250x250-000000-80-0-0.jpg">
+                    <h3>Name: Gimmie</h3>
+                    <div>Artist: Abba</div>
+                    <div>Rank: 4.5</div>
+                    <audio controls
+                        src="https://cdns-preview-8.dzcdn.net/stream/c-8708a478849e903d5065f4c9caaf8641-13.mp3"></audio>
+                    <button class="float-right btn btn-info">More Info</button>
+                </div> -->
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+#start_music {
+    position: absolute;
+    left: 10px;
+    top: 290px;
+    width: 140px;
+    /* display: none; */
+}
+
+body {
+    background-color: #3F416E;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.dark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    /* display: none; */
+}
+
+/* #lightbox_img {
+    /* max-height: 300px !important; */
+/* } */
+
+.dark-box {
+    max-width: 700px;
+    min-height: 200px;
+    width: 100%;
+    background-color: #77BBC7;
+    border: gray 2px solid;
+}
+
+#id_sort {
+    width: 150px;
+}
+
+
+
+#id_search {
+    width: 300px;
+}
+
+
+
+
+
+.strip {
+    min-height: 350px;
+    background-image: url("../images/vinyl.jpg");
+    background-position: center 60%;
+    background-size: cover;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
